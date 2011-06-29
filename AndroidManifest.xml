@@ -1,18 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="no.uka.findmyapp.appstoreAndroid"
-      android:versionCode="1"
-      android:versionName="1.0">
-    <uses-sdk android:minSdkVersion="8" />
+	package="no.uka.findmyapp.appstoreAndroid" android:versionCode="1"
+	android:versionName="1.0">
+	<uses-sdk android:minSdkVersion="8" />
 
-    <application android:icon="@drawable/icon" android:label="@string/app_name">
-        <activity android:name=".UkaAndroidAppstoreActivity"
-                  android:label="@string/app_name">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.camera" />
 
-    </application>
+	<application android:icon="@drawable/icon" android:label="@string/app_name">
+
+		<activity android:name="no.uka.findmyapp.appstoreAndroid.activities.Client"
+			android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activities.AppDetailsActivity"></activity>
+		<activity android:name=".activities.AppListActivity"></activity>
+		<activity android:name="no.uka.findmyapp.appstoreAndroid.activities.FavoritesListActivity"></activity>
+		<activity android:name="no.uka.findmyapp.appstoreAndroid.activities.EditContactActivity"></activity>
+		<activity android:name=".activities.AppListAdapter"></activity>
+
+
+
+	</application>
+
 </manifest>
