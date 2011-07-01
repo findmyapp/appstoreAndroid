@@ -5,5 +5,7 @@
   android:layout_width="fill_parent"
   android:layout_height="fill_parent">
     <TextView android:text="Turbonegro" android:id="@+id/app" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <Button android:id="@+id/market_button" android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" android:text="Hent app"></Button>
     
 </LinearLayout>

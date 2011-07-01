@@ -1,4 +1,4 @@
-package no.uka.findmyapp.appstoreAndroid.activities;
+package no.uka.findmyapp.appstoreAndroid.adapters;
 
 import java.util.List;
 
@@ -37,9 +37,11 @@ public class AppListAdapter extends ArrayAdapter<App> {
 		}
 
 		TextView title = (TextView) eventView.findViewById(R.id.title);
+		TextView publisher = (TextView) eventView.findViewById(R.id.publisher);
 		TextView body = (TextView) eventView.findViewById(R.id.place);
 
-		title.setText(app.getAppName());
+		title.setText(app.getName());
+		publisher.setText(app.getPublisher());
 		body.setText(String.valueOf(app.getRating()));
 
 		return eventView;

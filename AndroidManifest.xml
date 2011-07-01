@@ -5,13 +5,9 @@
 	android:versionName="1.0">
 	<uses-sdk android:minSdkVersion="8" />
 
-	<uses-permission android:name="android.permission.INTERNET" />
-	<uses-permission android:name="android.permission.camera" />
+	<uses-permission android:name="android.permission.INTERNET" /><application android:icon="@drawable/icon" android:label="@string/app_name" android:debuggable="false">
 
-	<application android:icon="@drawable/icon" android:label="@string/app_name">
-
-		<activity android:name="no.uka.findmyapp.appstoreAndroid.activities.Client"
-			android:label="@string/app_name">
+		<activity android:name="no.uka.findmyapp.appstoreAndroid.activities.Client" android:theme="@style/LookupTheme" android:label="@string/app_name">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
 				<category android:name="android.intent.category.LAUNCHER" />
@@ -19,9 +15,7 @@
 		</activity>
 		<activity android:name=".activities.AppDetailsActivity"></activity>
 		<activity android:name=".activities.AppListActivity"></activity>
-		<activity android:name="no.uka.findmyapp.appstoreAndroid.activities.FavoritesListActivity"></activity>
-		<activity android:name="no.uka.findmyapp.appstoreAndroid.activities.EditContactActivity"></activity>
-		<activity android:name=".activities.AppListAdapter"></activity>
+		<activity android:name=".activities.FavoritesListActivity"></activity>
 
 
 

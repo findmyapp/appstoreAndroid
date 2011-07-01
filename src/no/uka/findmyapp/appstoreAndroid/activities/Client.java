@@ -4,6 +4,7 @@ import no.uka.findmyapp.appstoreAndroid.R;
 import android.app.TabActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.webkit.WebView;
 import android.widget.TabHost;
 
 public class Client extends TabActivity{
@@ -12,7 +13,8 @@ public class Client extends TabActivity{
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
-		
+
+		//TabHost tabHost = (TabHost) findViewById(R.id.tabhost);
 		TabHost tabHost = getTabHost();
 		TabHost.TabSpec spec;
 		Intent intent;

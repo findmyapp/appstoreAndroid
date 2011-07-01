@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="hello">Hello World, UkaAndroidAppstoreActivity!</string>
-    <string name="app_name">UkaAndroidAppstore</string>
+    <string name="app_name">UkaAndroidAppstore</string><string name="template_user_agent" translatable="false">"%1$s/%2$s (Linux; Android)"</string>
+    <string name="app_title">UKA 11</string>
 </resources>

@@ -7,17 +7,17 @@ public class App implements Serializable{
 	private int id;
 	private Date publishDate;
 	private String publisher;
-	private String appName;
+	private String name;
 	private int timesDownloaded;
 	private int rating;
-	private String androidMarketURL;
+	private String androidMarketUri;
 	private double versionNumber;
 	
 	@Override
 	public String toString() {
 		return "App [publishDate=" + publishDate + ", publisher=" + publisher
-				+ ", appName=" + appName + ", timesDownloaded="
-				+ timesDownloaded + ", androidMarketURL=" + androidMarketURL
+				+ ", appName=" + name + ", timesDownloaded="
+				+ timesDownloaded + ", androidMarketURL=" + androidMarketUri
 				+ "]";
 	}
 	public int getId() {
@@ -38,11 +38,11 @@ public class App implements Serializable{
 	public void setPublisher(String publisher) {
 		this.publisher = publisher;
 	}
-	public String getAppName() {
-		return appName;
+	public String getName() {
+		return name;
 	}
-	public void setAppName(String appName) {
-		this.appName = appName;
+	public void setName(String name) {
+		this.name = name;
 	}
 	public int getTimesDownloaded() {
 		return timesDownloaded;
@@ -56,11 +56,12 @@ public class App implements Serializable{
 	public void setRating(int rating) {
 		this.rating = rating;
 	}
-	public String getAndroidMarketURL() {
-		return androidMarketURL;
+	
+	public String getAndroidMarketUri() {
+		return androidMarketUri;
 	}
-	public void setAndroidMarketURL(String androidMarketURL) {
-		this.androidMarketURL = androidMarketURL;
+	public void setAndroidMarketUri(String androidMarketUri) {
+		this.androidMarketUri = androidMarketUri;
 	}
 	public double getVersionNumber() {
 		return versionNumber;
